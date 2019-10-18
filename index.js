@@ -13,7 +13,7 @@ export default function(kibana) {
       app: {
         title: "Elastic HQ",
         description: "Elastic HQ",
-        icon: "fa-tag",
+        euiIconType: "monitoringApp",
         main: "plugins/elastic_hq/app"
       },
       hacks: ["plugins/elastic_hq/hack"],
