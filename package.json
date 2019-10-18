@@ -1,12 +1,8 @@
 {
   "name": "elastic_hq",
-  "version": "0.0.0",
+  "version": "kibana",
   "description": "y",
   "main": "index.js",
-  "kibana": {
-    "version": "7.2.1",
-    "templateVersion": "1.0.0"
-  },
   "scripts": {
     "preinstall": "node ../../preinstall_check",
     "kbn": "node ../../scripts/kbn",
