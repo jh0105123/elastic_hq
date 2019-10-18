@@ -30,10 +30,11 @@ export class Main extends React.Component {
   render() {
     return (
       <EuiPage>
-        <meta
+        {/* <meta
           http-equiv="refresh"
           content="0;url=http://bluecats.mirero.co.kr:5000/"
-        />
+        /> */}
+        <iframe src="http://bluecats.mirero.co.kr:5000/"></iframe>
       </EuiPage>
     );
   }
