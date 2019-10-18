@@ -1,0 +1,9 @@
+{
+  "paths": {
+    "elasticHq": "./"
+  },
+  "translations": [
+    "translations/zh-CN.json"
+  ]
+}
+
