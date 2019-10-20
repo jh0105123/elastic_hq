@@ -30,7 +30,7 @@ export class Main extends React.Component {
   render() {
     return (
       <EuiPage>
-        <iframe src="http://localhost:9200"></iframe>
+        <iframe src="http://192.168.99.201:9200"></iframe>
       </EuiPage>
     );
   }
