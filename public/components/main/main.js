@@ -10,7 +10,8 @@ import {
   EuiText
 } from "@elastic/eui";
 import { FormattedMessage } from "@kbn/i18n/react";
-
+import jQuery from "jquery";
+window.$ = window.jQuery = jQuery;
 export class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -28,9 +29,23 @@ export class Main extends React.Component {
     });
   }
   render() {
+    $("action_btn").click(function() {
+      $.ajax({
+        url: "http://192.168.99.201:9200",
+        dataType: "jsonp",
+        success: function(data) {
+          alert(data);
+        },
+        error: function(xhr) {
+          console.log("실패 - ", xhr);
+        }
+      });
+    });
+
     return (
       <EuiPage>
-        <iframe src="http://192.168.99.201:9200"></iframe>
+        <button id="action_btn" name="action_btn"></button>
+        {/* <iframe src="http://192.168.99.201:9200"></iframe> */}
       </EuiPage>
     );
   }
