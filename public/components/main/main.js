@@ -39,10 +39,12 @@ export class Main extends React.Component {
     //     }
     //   });
     // });
-    $("#testLoad").load("https://www.naver.com/");
+    jQuery.get("https://www.naver.com/", function(data) {
+      jQuery(".result").html(data);
+    });
     return (
       <EuiPage>
-        <div id="testLoad"></div>
+        <div class="result"></div>
       </EuiPage>
     );
   }
