@@ -40,7 +40,7 @@ export class Main extends React.Component {
           style={{
             width: "100%"
           }}
-          data="http://bluecats.mirero.co.kr:5000/"
+          data="https://github.com"
         ></object>
       </EuiPage>
     );
