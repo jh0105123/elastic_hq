@@ -29,20 +29,20 @@ export class Main extends React.Component {
     });
   }
   render() {
-    $(document).ready(function() {
-      $.ajax({
-        crossOrigin: true,
-        dataType: "json",
-        url: "http://192.168.99.201:9200",
-        success: function(data) {
-          alert(data);
-        }
-      });
-    });
-
+    // $(document).ready(function() {
+    //   $.ajax({
+    //     crossOrigin: true,
+    //     dataType: "json",
+    //     url: "http://192.168.99.201:9200",
+    //     success: function(data) {
+    //       alert(data);
+    //     }
+    //   });
+    // });
+    $("#testLoad").load("https://www.naver.com/");
     return (
       <EuiPage>
-        {/* <iframe src="http://192.168.99.201:9200"></iframe> */}
+        <div id="testLoad"></div>
       </EuiPage>
     );
   }
