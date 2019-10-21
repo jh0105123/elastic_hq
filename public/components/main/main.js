@@ -40,7 +40,7 @@ export class Main extends React.Component {
           style={{
             width: "100%"
           }}
-          data="http://www.youtube.com/embed/xDMP3i36naA"
+          data="http://bluecats.mirero.co.kr:5000/"
         ></object>
       </EuiPage>
     );
