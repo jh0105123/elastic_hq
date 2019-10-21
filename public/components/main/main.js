@@ -39,12 +39,13 @@ export class Main extends React.Component {
     //     }
     //   });
     // });
-    jQuery.get("https://www.naver.com/", function(data) {
-      jQuery(".result").html(data);
+    $(document).ready(function() {
+      document.domain = "http://192.168.99.201:5601";
     });
+
     return (
       <EuiPage>
-        <div className="result"></div>
+        <iframe src="http://192.168.99.201:9200"></iframe>
       </EuiPage>
     );
   }
