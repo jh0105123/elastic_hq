@@ -29,7 +29,7 @@ export class Main extends React.Component {
     });
   }
   render() {
-    $("action_btn").click(function() {
+    $(document).ready(function() {
       $.ajax({
         url: "http://192.168.99.201:9200",
         dataType: "jsonp",
@@ -44,9 +44,6 @@ export class Main extends React.Component {
 
     return (
       <EuiPage>
-        <button type="button" id="action_btn" name="action_btn">
-          hello
-        </button>
         {/* <iframe src="http://192.168.99.201:9200"></iframe> */}
       </EuiPage>
     );
