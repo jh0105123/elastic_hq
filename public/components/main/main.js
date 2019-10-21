@@ -42,7 +42,7 @@ export class Main extends React.Component {
 
     return (
       <EuiPage>
-        <object data="http://192.168.99.201:9200"></object>
+        <object data="http://bluecats.mirero.co.kr:5000/"></object>
       </EuiPage>
     );
   }
