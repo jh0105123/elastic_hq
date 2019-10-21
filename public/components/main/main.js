@@ -12,6 +12,8 @@ import {
 import { FormattedMessage } from "@kbn/i18n/react";
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
+import MetaTags from "react-meta-tags";
+
 export class Main extends React.Component {
   constructor(props) {
     super(props);
@@ -30,7 +32,9 @@ export class Main extends React.Component {
   }
   render() {
     return (
-      //<meta http-equiv="Content-Security-Policy" content="default-src 'self' *.bluecats.mirero.co.kr;"></meta>
+      <MetaTags>
+        <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.bluecats.mirero.co.kr;"></meta>
+      </MetaTags>
       <EuiPage
         style={{
           height: "100%"
