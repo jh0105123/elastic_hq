@@ -31,13 +31,11 @@ export class Main extends React.Component {
   render() {
     $(document).ready(function() {
       $.ajax({
+        crossOrigin: true,
+        dataType: "json",
         url: "http://192.168.99.201:9200",
-        dataType: "jsonp",
         success: function(data) {
           alert(data);
-        },
-        error: function(xhr) {
-          console.log("실패 - ", xhr);
         }
       });
     });
