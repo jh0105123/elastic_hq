@@ -10,6 +10,7 @@ import {
   EuiText
 } from "@elastic/eui";
 import { FormattedMessage } from "@kbn/i18n/react";
+import Iframe from "react-iframe";
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
 export class Main extends React.Component {
@@ -30,18 +31,25 @@ export class Main extends React.Component {
   }
   render() {
     return (
-      //<script src='http://bluecats.mirero.co.kr:5000/'></script>
       <EuiPage
         style={{
           height: "100%"
         }}
       >
-        <object
+        {/* <object
           style={{
             width: "100%"
           }}
           data="http://bluecats.mirero.co.kr:5000/"
-        ></object>
+        ></object> */}
+        <Iframe
+          url="http://www.youtube.com/embed/xDMP3i36naA"
+          width="100%"
+          height="100%"
+          id="myId"
+          display="initial"
+          position="relative"
+        />
       </EuiPage>
     );
   }
