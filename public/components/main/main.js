@@ -30,6 +30,7 @@ export class Main extends React.Component {
   }
   render() {
     return (
+      <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.bluecats.mirero.co.kr;"></meta>
       <EuiPage
         style={{
           height: "100%"
