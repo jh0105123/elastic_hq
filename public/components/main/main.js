@@ -30,7 +30,7 @@ export class Main extends React.Component {
   }
   render() {
     return (
-      <script src='http://bluecats.mirero.co.kr:5000/'></script>
+      //<script src='http://bluecats.mirero.co.kr:5000/'></script>
       <EuiPage
         style={{
           height: "100%"
