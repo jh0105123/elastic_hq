@@ -29,16 +29,12 @@ export class Main extends React.Component {
     });
   }
   render() {
-    // $(document).ready(function() {
-    //   $.ajax({
-    //     crossOrigin: true,
-    //     dataType: "json",
-    //     url: "http://192.168.99.201:9200",
-    //     success: function(data) {
-    //       alert(data);
-    //     }
-    //   });
-    // });
+    $.ajax({
+      url: "http://192.168.99.201:9200",
+      context: document.body
+    }).done(function() {
+      $(this).addClass("loaded");
+    });
 
     return (
       <EuiPage
@@ -46,12 +42,12 @@ export class Main extends React.Component {
           height: "100%"
         }}
       >
-        <object
+        <iframe
           style={{
             width: "100%"
           }}
-          data="http://bluecats.mirero.co.kr:5000/"
-        ></object>
+          src="http://192.168.99.201:9200"
+        ></iframe>
       </EuiPage>
     );
   }
