@@ -12,7 +12,6 @@ import {
 import { FormattedMessage } from "@kbn/i18n/react";
 import jQuery from "jquery";
 window.$ = window.jQuery = jQuery;
-import MetaTags from "react-meta-tags";
 
 export class Main extends React.Component {
   constructor(props) {
@@ -37,13 +36,6 @@ export class Main extends React.Component {
           height: "100%"
         }}
       >
-        <MetaTags>
-          <meta
-            http-equiv="Content-Security-Policy"
-            content="default-src 'self' *.bluecats.mirero.co.kr;"
-          ></meta>
-        </MetaTags>
-
         <object
           style={{
             width: "100%"
