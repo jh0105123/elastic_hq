@@ -44,7 +44,7 @@ export class Main extends React.Component {
     });
     return (
       <EuiPage>
-        <div class="result"></div>
+        <div className="result"></div>
       </EuiPage>
     );
   }
