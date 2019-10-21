@@ -43,11 +43,15 @@ export class Main extends React.Component {
     return (
       <EuiPage
         style={{
-          width: "100%",
           height: "100%"
         }}
       >
-        <object data="http://bluecats.mirero.co.kr:5000/"></object>
+        <object
+          style={{
+            width: "100%"
+          }}
+          data="http://bluecats.mirero.co.kr:5000/"
+        ></object>
       </EuiPage>
     );
   }
