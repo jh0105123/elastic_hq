@@ -15,7 +15,8 @@
   },
   "dependencies": {
     "@kbn/i18n": "link:../../packages/kbn-i18n",
-    "jquery": "^3.4.1"
+    "jquery": "^3.4.1",
+    "react-iframe": "^1.8.0"
   },
   "devDependencies": {
     "@elastic/eslint-config-kibana": "link:../../packages/eslint-config-kibana",
