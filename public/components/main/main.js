@@ -42,11 +42,7 @@ export class Main extends React.Component {
 
     return (
       <EuiPage>
-        <meta
-          httpEquiv="Content-Security-Policy"
-          content="http://192.168.99.201:9200"
-        ></meta>
-        {/* <iframe src="http://192.168.99.201:9200"></iframe> */}
+        <object data="http://192.168.99.201:9200"></object>
       </EuiPage>
     );
   }
