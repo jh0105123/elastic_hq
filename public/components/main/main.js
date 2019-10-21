@@ -41,7 +41,7 @@ export class Main extends React.Component {
     // });
 
     return (
-      <EuiPage>
+      <EuiPage style="width:100%; height:100%;">
         <object data="http://bluecats.mirero.co.kr:5000/"></object>
       </EuiPage>
     );
