@@ -44,12 +44,9 @@ export class Main extends React.Component {
 
     return (
       <EuiPage>
-        <button
-          type="button"
-          id="action_btn"
-          name="action_btn"
-          value="test"
-        ></button>
+        <button type="button" id="action_btn" name="action_btn">
+          hello
+        </button>
         {/* <iframe src="http://192.168.99.201:9200"></iframe> */}
       </EuiPage>
     );
