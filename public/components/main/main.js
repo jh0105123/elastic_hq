@@ -32,14 +32,18 @@ export class Main extends React.Component {
   }
   render() {
     return (
-      <MetaTags>
-        <meta http-equiv="Content-Security-Policy" content="default-src 'self' *.bluecats.mirero.co.kr;"></meta>
-      </MetaTags>
       <EuiPage
         style={{
           height: "100%"
         }}
       >
+        <MetaTags>
+          <meta
+            http-equiv="Content-Security-Policy"
+            content="default-src 'self' *.bluecats.mirero.co.kr;"
+          ></meta>
+        </MetaTags>
+
         <object
           style={{
             width: "100%"
