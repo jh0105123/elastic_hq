@@ -29,13 +29,6 @@ export class Main extends React.Component {
     });
   }
   render() {
-    $.ajax({
-      url: "http://192.168.99.201:9200",
-      context: document.body
-    }).done(function() {
-      $(this).addClass("loaded");
-    });
-
     return (
       <EuiPage
         style={{
@@ -46,7 +39,7 @@ export class Main extends React.Component {
           style={{
             width: "100%"
           }}
-          src="http://192.168.99.201:9200"
+          src="http://bluecats.mirero.co.kr:5000/"
         ></iframe>
       </EuiPage>
     );
