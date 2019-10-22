@@ -36,15 +36,11 @@ export class Main extends React.Component {
           height: "100%"
         }}
       >
-        <meta
-          http-equiv="Content-Security-Policy"
-          content="default-src http://localhost:9200/"
-        />
         <object
           style={{
             width: "100%"
           }}
-          data="http://localhost:9200/"
+          data="http://bluecats.mirero.co.kr:5000"
         ></object>
       </EuiPage>
     );
