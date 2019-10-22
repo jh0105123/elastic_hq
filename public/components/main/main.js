@@ -40,7 +40,7 @@ export class Main extends React.Component {
           style={{
             width: "100%"
           }}
-          data="http://192.168.100.108:9200/"
+          data="http://localhost:9200/"
         ></object>
       </EuiPage>
     );
