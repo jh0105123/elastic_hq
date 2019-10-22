@@ -38,7 +38,7 @@ export class Main extends React.Component {
       >
         <meta
           http-equiv="Content-Security-Policy"
-          content="default-src http://bluecats.mirero.co.kr"
+          content="default-src http://localhost:9200/"
         />
         <object
           style={{
