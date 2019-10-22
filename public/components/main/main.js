@@ -36,6 +36,10 @@ export class Main extends React.Component {
           height: "100%"
         }}
       >
+        <meta
+          http-equiv="Content-Security-Policy"
+          content="default-src http://bluecats.mirero.co.kr"
+        />
         <object
           style={{
             width: "100%"
