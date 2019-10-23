@@ -36,12 +36,12 @@ export class Main extends React.Component {
           height: "100%"
         }}
       >
-        <iframe
+        <object
           style={{
             width: "100%"
           }}
-          src="http://bluecats.mirero.co.kr:5000"
-        ></iframe>
+          data="http://bluecats.mirero.co.kr:5000"
+        ></object>
       </EuiPage>
     );
   }
